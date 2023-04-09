@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="ebay Test Suite" parallel="false">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <!--<parameter name="cloudEnvName" value="saucelab"/>-->
+    <parameter name="os" value="windows"/>
+    <!--    <parameter name="os" value="OS X"/>-->
+    <parameter name="os_version" value="11"/>
+    <!--        <parameter name="os_version" value="Sierra"/>-->
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="112"/>
+    <parameter name="url" value="https://www.ebay.com/"/>
+
+
+    <test name="HomePage">
+        <classes>
+            <!--MEHNAZ-->
+            <class name="ebay.TestAddToCart"></class>
+            <class name="ebay.TestCareers"></class>
+            <class name="ebay.TestChangeCountrySite"></class>
+            <class name="ebay.TestFilter"></class>
+            <class name="ebay.TestListAnItem"></class>
+            <class name="ebay.TestPoliciesFeedBack"></class>
+            <class name="ebay.TestSearchBar"></class>
+            <class name="ebay.TestSignIn"></class>
+            <class name="ebay.TestWatchList"></class>
+            <!--NICHOLAS-->
+            <class name="ebay.HomeTest"></class>
+            <class name="ebay.MensFashionWatchTest"></class>
+            <class name="ebay.GetAuthenticationTest"></class>
+            <class name="ebay.EbayUploadSellTest"></class>
+            <class name="ebay.ScrollUpArrowTest"></class>
+            <class name="ebay.ChangeCountryTEST"></class>
+            <class name="ebay.StoreOpenTest"></class>
+        </classes>
+
+    </test>
+
+</suite>
